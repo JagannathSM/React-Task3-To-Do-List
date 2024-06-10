@@ -1,0 +1,46 @@
+.container-for-cards{
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 30%;
+    margin-bottom: 15px;
+    border: rgb(17, 89, 17) 1px solid;
+    padding: 15px 10px;
+}
+
+.Card-Details > p,h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.Card-functions{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.Card-functions > select {
+    width: 50%;
+    height: 22px;
+}
+
+.Card-buttons{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Card-buttons > button {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid green;
+    height: 25px;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    width: 30%;
+}
+
