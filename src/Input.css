@@ -26,7 +26,7 @@
 }
 
 .task-add-button > button{
-    height: 30px;
+    padding: 3px 10px;
     border-radius: 7px;
     border: 0;
     background-color: white;

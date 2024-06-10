@@ -9,3 +9,10 @@
     color: aliceblue;
     text-shadow: 1px 1px black;
 }
+
+@media screen and (max-width: 600px) {
+    .Header{
+        justify-content: center;
+        font-size: x-large;
+    }
+}

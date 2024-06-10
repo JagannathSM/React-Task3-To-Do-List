@@ -20,17 +20,38 @@
    justify-content: space-between;
 }
 
-.Card-functions > select {
+.Select-function > select {
+    margin-left: 10px;
     width: 50%;
     height: 22px;
 }
 
 .Card-buttons{
+    margin-top: 30px;
     padding-top: 10px;
+    flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    .Card-buttons{
+        padding-top: 10px;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Card-buttons > button{
+        width: 100%;
+    }
+    .container-for-cards{
+        width: 100%;
+        margin-bottom: 15px;
+        border: rgb(17, 89, 17) 1px solid;
+        padding: 15px 10px;
+    }
 }
 
 .Card-buttons > button {
@@ -38,9 +59,14 @@
     outline: none;
     border: 1px solid green;
     height: 25px;
-    font-size: medium;
+    font-size: small;
     font-weight: 600;
     color: black;
-    width: 30%;
+    
 }
 
+.Select-function{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

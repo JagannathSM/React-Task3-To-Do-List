@@ -25,6 +25,11 @@
     font-size: x-large;
 }
 
+@media screen and (max-width: 600px) {
+    .filter-card-text > h3{
+        font-size: medium;
+    }
+}
 /* .filter-button */
 
 .filter-cards-function > button {

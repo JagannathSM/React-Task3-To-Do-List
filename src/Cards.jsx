@@ -21,14 +21,17 @@ function Cards(props) {
   return (
     <div className='container-for-cards'>
         <div className='Card-Details'>
-            <h3>{props.name}</h3>
-            <p>{props.disc}</p>
+            <h3>Task Name : {props.name}</h3>
+            <p><b>Task Discription : </b>{props.disc}</p>
         </div>
         <div className='Card-functions'>
-        <select disabled={edit} value={selectedValue} onChange={(e) => setSelectedValue(e.target.value)} style={setTaskStyle}>
-            <option value="false">Not Completed</option>
-            <option value="true">Completed</option>
-        </select >
+        <div className='Select-function'>
+            <label htmlFor='select_tag'><b>Status : </b></label>
+            <select disabled={edit} value={selectedValue} onChange={(e) => setSelectedValue(e.target.value)} style={setTaskStyle} id='select_tag'>
+                <option value="false">Not Completed</option>
+                <option value="true">Completed</option>
+            </select >
+        </div>
         <div className='Card-buttons'>
             { edit ? <button onClick={()=> changeEdit()} style={{backgroundColor:"gold"}}>Edit</button> :
             <button onClick={()=>{ changeEdit(); props.handleEdit(id,selectedValue)}} style={{backgroundColor:"rgb(37, 219, 37)"}}>Update</button> }
